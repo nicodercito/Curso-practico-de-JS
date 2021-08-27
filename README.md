@@ -7,3 +7,5 @@
 -implementar formulas en js
 -crear funciones
 -integrar js con HTML
+
+Aqui empieza esta historia
