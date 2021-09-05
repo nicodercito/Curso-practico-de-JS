@@ -42,6 +42,10 @@ function areaTriangulo (altura, base){
     return (base * altura) / 2;
 }
 
+
+function alturaTriangulo (lado1, base){
+    return (Math.sqrt(lado1**2 - (base**2/4)));
+}
 // const areaTriangulo = (alturaTriangulo * ladoCuadrado) / 2;
 
 // console.log("El area del triangulo miden : " + areaTriangulo + " cm");
@@ -123,6 +127,23 @@ function calcularAreaTriangulo(){
     alert (area);
     console.log(areaTriangulo);
     console.log(area);
+}
+
+//Reto : Altura de triangulo isoceles
+function calcularAlturaTriangulo(){
+    const input1 = document.getElementById("InputLado1");
+    const valueL1 = parseFloat(input1.value);
+    const input2 = document.getElementById("InputLado2");
+    const valueL2 = parseFloat(input2.value);
+    const inputB = document.getElementById("InputBase");
+    const valueB = parseFloat(inputB.value);
+
+    if (valueL1 == valueL2){
+        const alturaT = alturaTriangulo(valueL1, valueB);
+        alert (alturaT);
+    }else if (valueL1 != valueL2){
+        alert ("Si los lados son diferentes, este no es un triangulo isoceles. Intenta de nuevo")
+    }
 }
 
 //Calculo de circulo

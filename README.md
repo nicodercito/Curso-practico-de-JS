@@ -8,4 +8,12 @@
 -crear funciones
 -integrar js con HTML
 
-Aqui empieza esta historia
+
+## Taller #2: porcentajes y descuentos
+
+
+-primer paso : definir formulas
+-implementar formulas en js
+-crear funciones
+-integrar js con HTML
+

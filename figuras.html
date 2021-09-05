@@ -17,7 +17,7 @@
         </div>
     </header>
     <!-- //Calculo de cuadrado -->
-    <section>
+    <section class="section">
         <div class="container">
             <h2>Calcula el área y perímetro de un cuadrado</h2>
             <form class="container__form">
@@ -39,14 +39,14 @@
         </div>
     </section>
     <!-- //Calculo de triangulo -->
-    <section>
+    <section class="section">
         <div class="container">
             <h2>Calcula el área y perímetro de un triangulo</h2>
             <form class="container__form">
                 <label for="InputTriangulo">
                     Escribe cuando mide cada lado de tu cuadrado:
                 </label>
-                <div class="container__form--input">
+                <br class="container__form--input">
                     <input id="InputLado1" type="number" placeholder="Lado 1"/>
                     <input id="InputLado2" type="number" placeholder="Lado 2" />
                     <input id="InputBase" type="number" placeholder="Base"/>
@@ -57,6 +57,9 @@
                     </button>
                     <button type="button"  onclick="calcularAreaTriangulo()">
                         Calcular el área
+                    </button>
+                    <button type="button"  onclick="calcularAlturaTriangulo()">
+                        Altura de triangulo isoceles
                     </button>
                 </div>
             </form>
