@@ -29,6 +29,15 @@
             <label for="inputCoupon">Escribe el descuento de tu producto:</label>
             <input id="inputCoupon" type="text" placeholder="Descuento">
             
+            <!-- Lista desplegable de cupones disponigles -->
+            <select name="Coupons" id="inputCoupons">
+                <option selected value="0">Cupones</option>
+                    <optgroup label="Disponibles">
+                        <option value="PrimeraCompra">Primera Compra</option>
+                        <option value="Aniversario50%off">Aniversario 50% off</option>
+                        <option value="NuevaPromo">Nueva promoción</option>
+                    </optgroup>
+            </select>
             
             <button type="button" onclick="onClickButtonPriceDiscount()">
                 ¡Calculalo por mi!
