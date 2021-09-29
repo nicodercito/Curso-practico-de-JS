@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./descuentos.css">
     <title>Porcentajes y descuentos| Curso practico de JS </title>
 </head>
 <body>
@@ -14,9 +15,22 @@
     </header>
 
     <section>
-        <h2>
-            Calcula el precio a pagar de tus productos con descuento
-        </h2>
+        
+        <div>
+            <h2>
+                Calcula el precio a pagar de tus productos con descuento
+            </h2>
+
+            <h3>
+                Vestido dama rosa
+            </h3>
+            <p>
+                Vestido de boda largo, elegante encaje en la parte superior de la blusa, sin mangas. </br>
+                Diseño para atarse a la espalda con cordón dando un margen de 3 cm por debajo o por 
+                encima de las medidas dada. </br>
+                su silueta linea A
+            </p>
+        </div>
 
         <form action="">
             
@@ -29,7 +43,7 @@
             <label for="inputCoupon">Escribe el descuento de tu producto:</label>
             <input id="inputCoupon" type="text" placeholder="Descuento">
             
-            <!-- Lista desplegable de cupones disponigles -->
+            <!-- Lista desplegable de cupones disponigles
             <select name="Coupons" id="inputCoupons">
                 <option selected value="0">Cupones</option>
                     <optgroup label="Disponibles">
@@ -37,13 +51,17 @@
                         <option value="Aniversario50%off">Aniversario 50% off</option>
                         <option value="NuevaPromo">Nueva promoción</option>
                     </optgroup>
-            </select>
-            
+            </select> -->
+
             <button type="button" onclick="onClickButtonPriceDiscount()">
                 ¡Calculalo por mi!
             </button>
 
-            <p id="resultPrice"></p>
+            <p id="resultPrice">Aqui veras el precio final</p>
+
+            <div>
+                <img class="img" src="./vestido novia.jpg" alt="vestido novia">
+            </div>
 
         </form>
     </section>

@@ -1,6 +1,8 @@
 let originalPrice = 120;
 const discount = 18;
 
+const discounts = ["PrimeraCompra10off", "Vestido prado"]
+
 const priceDiscounted = 100 - discount;
 const priceAdjusted = (originalPrice * priceDiscounted) / 100;
 
@@ -28,6 +30,6 @@ function onClickButtonPriceDiscount (){
     const resultPrice = document.getElementById("resultPrice");
 
     const finalPrice = applyPriceDiscounted (priceValue, discountValue)
-    
-    resultPrice.innerText = "El precio con descuento es: $" + finalPrice;
+
+    resultPrice.innerText = "El precio final es: $" + finalPrice;
 }
