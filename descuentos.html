@@ -32,28 +32,40 @@
             </p>
         </div>
 
-        <br action="">
+        <form>
 
-            <label for= "inputPrice">Escribe el precio de tu producto:</label>
-            <input id="inputPrice" type="number" placeholder="Precio"></br>
+            <label for="inputPrice">Escribe el precio de tu producto:</label>
+            <select name="" id="">
+                <option selected value="0">Referencias</option>
+                    <optgroup label="Promociones">
+                        <option value="oxfordDress">Oxford</option>
+                        <option value="praderaDress">Pradera</option>
+                        <option value="queenDress">Queen</option>
+                    </optgroup>
+            </select>
 
+            </form>
             <label for="inputDiscount">Escribe el descuento de tu producto:</label>
             <input id="inputDiscount" type="number" placeholder="Descuento"></br>
 
-            <label for="inputCoupon">Escribe el descuento de tu producto:</label>
-            <input id="inputCoupon" type="text" placeholder="Descuento"></br>
+            <label for="inputCoupon">Escoge tu descuento </label>
 
-            <!-- Lista desplegable de cupones disponigles
+            <!-- Lista desplegable de cupones disponigles -->
             <select name="Coupons" id="inputCoupons">
                 <option selected value="0">Cupones</option>
-                    <optgroup label="Disponibles">
+                    <optgroup label="Promociones">
                         <option value="PrimeraCompra">Primera Compra</option>
                         <option value="Aniversario50%off">Aniversario 50% off</option>
                         <option value="NuevaPromo">Nueva promoción</option>
                     </optgroup>
-            </select> -->
+            </select>
 
-            <button type="button" onclick="onClickButtonPriceDiscount()">
+            </br>
+            <label for="textDiscount">Otro descuento:</label>
+            <input id="textDiscount" type="text" placeholder="Escribelo aquí"></br>
+
+            </br>
+            </br><button type="button" onclick="onClickButtonPriceDiscount()">
                 ¡Calculalo por mi!
             </button>
 
@@ -62,6 +74,11 @@
             <div>
                 <img class="img" src="./vestido novia.jpg" alt="vestido novia">
             </div>
+
+            </br>
+            </br><button type="button" onclick="thanks()">
+                ¡Comprar ahora!
+            </button>
 
         </form>
     </section>
