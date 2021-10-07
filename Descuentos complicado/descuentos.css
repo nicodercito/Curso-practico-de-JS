@@ -1,0 +1,17 @@
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: center;
+}
+body {
+    background-color: blue;
+    color: white;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+}
