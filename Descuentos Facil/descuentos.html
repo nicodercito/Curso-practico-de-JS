@@ -8,15 +8,15 @@
     <title>Porcentajes y descuentos| Curso practico de JS </title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <p>
             Porcentajes y descuentos
         </p>
     </header>
 
-    <section>
+    <section class="section">
 
-        <div>
+        <div class="texto">
             <h2>
                 Calcula el precio a pagar de tus productos con descuento
             </h2>
@@ -24,29 +24,28 @@
             <h3>
                 ¡Escoge tu vestido!
             </h3>
-            <!-- <p>
-                Vestido de boda largo, elegante encaje en la parte superior de la blusa, sin mangas. </br>
-                Diseño para atarse a la espalda con cordón dando un margen de 3 cm por debajo o por 
-                encima de las medidas dada. </br>
-                su silueta linea A
-            </p> -->
+            <p>
+                ¡Tu vestido de novia lo recordaras por siempre!<br>
+                Recuerda hacer la mejor eleccion posible
+            </p>
         </div>
 
-        <form>
+    </section>
+    <section class="section">
 
+        <form class="form">
+            
+            <!-- Escribir el precio del producto -->
             <label for="inputReference">Escribe el precio de tu producto:</label>
-            <select name="reference" id="inputReference">
-                <option selected value="0">Referencias</option>
-                    <optgroup label="Stock">
-                        <option value="oxfordDress">Oxford</option>
-                        <option value="praderaDress">Pradera</option>
-                        <option value="queenDress">Queen</option>
-                    </optgroup>
-            </select>
-
+            <br><br>
+            <input id="InputPrice" type="number" placeholder="Precio full">
             </br>
+
+
+            <!-- </br>
             <label for="inputCoupon">Escoge tu descuento </label>
-            <!-- Lista desplegable de cupones disponiples -->
+            <br><br>
+            Lista desplegable de cupones disponiples
             <select name="Coupons" id="inputCoupons">
                 <option selected value="0">Cupones</option>
                     <optgroup label="Promociones">
@@ -55,29 +54,40 @@
                         <option value="NuevaPromo">Nueva promoción</option>
                     </optgroup>
             </select>
+            </br> -->
 
             </br>
-            <label for="textDiscount">Otro descuento:</label>
-            <input id="textDiscount" type="text" placeholder="Escribelo aquí"></br>
-
+            <label for="writeDiscount">Escribe tu descuento:</label>
+            <!-- Boton para mostrar los descuentos -->
+            <button id="questionbutton" class="popupdiscounts" type="button" onclick="">?</button>
+            <br><br>
+            <input id="inputDiscount" type="text" placeholder="Escribelo aquí">
             </br>
-            <button type="button" onclick="onClickDressDiscount()">
+
+            <!-- Boton para aplicar los descuentos -->
+            </br>  
+            <button type="button" onclick="onClickButtonPriceDiscount()">
                 ¡Calculalo por mi!
             </button>
 
-            <p id="resultPrice">Aqui veras el precio final</p>
+            <p id="ResultP">Aqui veras el precio final</p>
 
             <div>
-                <img class="img" src="./vestido novia.jpg" alt="vestido novia">
+                <img class="img" src="./Queen.jpg" alt="vestido novia">
             </div>
 
             </br>
-            <button type="button" onclick="thanks()">
+            <button type="button" onclick="reloadDiscounts()">
                 ¡Comprar ahora!
             </button>
 
         </form>
     </section>
-    <script src="./descuentos.js"></script>
+    <script src="./descuentos reloaded.js"></script>
 </body>
+
+<footer>
+    Aqui vamos a terminar
+</footer>
+
 </html>
